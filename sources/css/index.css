@@ -1,0 +1,79 @@
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+ h1,  h2,  h3,  h4,  h5,  h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  color: #E83E8C;
+}
+
+a:hover {
+  color: #99295D;
+}
+
+.nav-bar {
+  display: flex;
+  flex-flow: column;
+}
+
+.nav-content {
+  flex: 1 1 auto;
+  overflow-y: scroll;
+  border-top: 1px solid gray;
+
+}
+
+.nav-link + .nav-link {
+  border-top: 1px solid gray;
+}
+
+pre, :not(pre) > code {
+  background-color: hsl(0, 0%, 15%);
+  color: #E83E8C;
+  font-size: 75%;
+}
+
+pre {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+:not(pre) > code {
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin-right: 0.1rem;
+  border-radius: 0.25rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-content {
+    height: 180px;
+  }
+  .nav-content {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+  .main-doc {
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav-bar {
+    height: 100vh;
+    border-right: 1px solid gray;
+  }
+  .nav-content {
+    border-top: 1px solid gray;
+  }
+  .main-doc {
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 1rem 2rem;
+  }
+}
